@@ -1,0 +1,794 @@
+{
+ "geoms": {
+ "geom1_text_source": {
+ "geom": "text",
+"classed": "geom1_text_source",
+"aes": {
+ "x": "x",
+"y": "y" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"label": "Source: palmerpenguins",
+"size":        6 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character",
+"label": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_point_scatter": {
+ "geom": "point",
+"classed": "geom2_point_scatter",
+"aes": {
+ "x": "flipper_length_mm",
+"y": "body_mass_g",
+"colour": "species",
+"showSelected1": "species" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        2,
+"alpha":      0.7,
+"showSelected": "species",
+"help_showSelected": "species" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected1": "factor",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_bar_hist": {
+ "geom": "rect",
+"classed": "geom3_bar_hist",
+"aes": {
+ "x": "value",
+"fill": "species",
+"showSelected1": "species" 
+},
+"params": {
+ "na.rm": false,
+"bins":       30,
+"na.rm": false,
+"pad": false,
+"alpha":      0.6,
+"colour": "#FFFFFF",
+"showSelected": "species",
+"help_showSelected": "species" 
+},
+"types": {
+ "fill": "rgb",
+"count": "numeric",
+"xmin": "numeric",
+"xmax": "numeric",
+"density": "numeric",
+"ncount": "numeric",
+"ndensity": "numeric",
+"showSelected1": "factor",
+"PANEL": "factor",
+"group": "character",
+"ymin": "numeric",
+"ymax": "numeric" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"selectors": {
+ "species": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "Adelie", "Gentoo", "Chinstrap" ],
+"levels": [ "Adelie", "Gentoo", "Chinstrap" ],
+"update": [
+ "geom2_point_scatter",
+"geom3_bar_hist" 
+] 
+} 
+},
+"plots": {
+ "source": {
+ "panel_margin_lines":     0.27,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": [],
+"panel_border": [],
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      0.5,
+    0.75,
+       1,
+    1.25,
+     1.5 
+] 
+],
+"y": [
+ [
+      0.5,
+    0.75,
+       1,
+    1.25,
+     1.5 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      0.5,
+   0.625,
+    0.75,
+   0.875,
+       1,
+   1.125,
+    1.25,
+   1.375,
+     1.5 
+] 
+],
+"y": [
+ [
+      0.5,
+   0.625,
+    0.75,
+   0.875,
+       1,
+   1.125,
+    1.25,
+   1.375,
+     1.5 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+      0.5,
+    0.75,
+       1,
+    1.25,
+     1.5 
+],
+"xrange": [     0.45,     1.55 ],
+"xline": false,
+"xticks": false,
+"y": [
+      0.5,
+    0.75,
+       1,
+    1.25,
+     1.5 
+],
+"yrange": [     0.45,     1.55 ],
+"yline": false,
+"yticks": false 
+},
+"xtitle": "",
+"strip_text_xsize": "12pt",
+"xsize": "pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "",
+"strip_text_ysize": "12pt",
+"ysize": "pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [],
+"ylabs": [],
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_text_source" 
+] 
+},
+"scatter": {
+ "panel_margin_lines":     0.32,
+"legend": {
+ "Species": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Species",
+"class": "species",
+"selector": "species",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "11.2pt",
+"title_size": "14pt",
+"entries": [
+ {
+ "pointcolour": "#F8766D",
+"pointshape":       19,
+"pointsize":        2,
+"pointalpha":      0.7,
+"pointstroke":      0.5,
+"label": "Adelie" 
+},
+{
+ "pointcolour": "#00BA38",
+"pointshape":       19,
+"pointsize":        2,
+"pointalpha":      0.7,
+"pointstroke":      0.5,
+"label": "Chinstrap" 
+},
+{
+ "pointcolour": "#619CFF",
+"pointshape":       19,
+"pointsize":        2,
+"pointalpha":      0.7,
+"pointstroke":      0.5,
+"label": "Gentoo" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#000000",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      170,
+     180,
+     190,
+     200,
+     210,
+     220,
+     230 
+] 
+],
+"y": [
+ [
+     2500,
+    3000,
+    3500,
+    4000,
+    4500,
+    5000,
+    5500,
+    6000,
+    6500 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#000000",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      170,
+     175,
+     180,
+     185,
+     190,
+     195,
+     200,
+     205,
+     210,
+     215,
+     220,
+     225,
+     230 
+] 
+],
+"y": [
+ [
+     2500,
+    2750,
+    3000,
+    3250,
+    3500,
+    3750,
+    4000,
+    4250,
+    4500,
+    4750,
+    5000,
+    5250,
+    5500,
+    5750,
+    6000,
+    6250,
+    6500 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+      170,
+     180,
+     190,
+     200,
+     210,
+     220,
+     230 
+],
+"xlab": [
+ "170",
+"180",
+"190",
+"200",
+"210",
+"220",
+"230" 
+],
+"xrange": [      167,      233 ],
+"xline": false,
+"xticks": true,
+"y": [
+     2500,
+    3000,
+    3500,
+    4000,
+    4500,
+    5000,
+    5500,
+    6000,
+    6500 
+],
+"ylab": [
+ "2500",
+"3000",
+"3500",
+"4000",
+"4500",
+"5000",
+"5500",
+"6000",
+"6500" 
+],
+"yrange": [     2300,     6700 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Flipper length (mm)",
+"strip_text_xsize": "14pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Body mass (g)",
+"strip_text_ysize": "14pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "170",
+"180",
+"190",
+"200",
+"210",
+"220",
+"230" 
+],
+"ylabs": [
+ "2500",
+"3000",
+"3500",
+"4000",
+"4500",
+"5000",
+"5500",
+"6000",
+"6500" 
+],
+"title_size": "16.8pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom2_point_scatter" 
+] 
+},
+"hist": {
+ "panel_margin_lines":     0.32,
+"legend": {
+ "Species": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "Species",
+"class": "species",
+"selector": "species",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "11.2pt",
+"title_size": "14pt",
+"entries": [
+ {
+ "polygonfill": "#F8766D",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.6,
+"label": "Adelie" 
+},
+{
+ "polygonfill": "#00BA38",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.6,
+"label": "Chinstrap" 
+},
+{
+ "polygonfill": "#619CFF",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.6,
+"label": "Gentoo" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [ "body_mass_g", "flipper_length_mm" ],
+"right": [
+ "" 
+],
+"n": {
+ "top": 1,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2" ],
+"ROW": [ 1, 1 ],
+"COL": [ 1, 2 ],
+"variable": [ "body_mass_g", "flipper_length_mm" ],
+"SCALE_X": [ 1, 2 ],
+"SCALE_Y": [ 1, 1 ],
+"AXIS_X": [ true, true ],
+"AXIS_Y": [ true, false ],
+"coord_fixed": [ false, false ],
+"width_proportion": [      0.5,      0.5 ],
+"height_proportion": [        1,        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#000000",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     2500,
+    3500,
+    4500,
+    5500,
+    6500 
+],
+[
+      180,
+     200,
+     220 
+] 
+],
+"y": [
+ [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25 
+],
+[
+        0,
+       5,
+      10,
+      15,
+      20,
+      25 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#000000",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     2500,
+    3000,
+    3500,
+    4000,
+    4500,
+    5000,
+    5500,
+    6000,
+    6500 
+],
+[
+      170,
+     180,
+     190,
+     200,
+     210,
+     220,
+     230 
+] 
+],
+"y": [
+ [
+        0,
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5,
+      15,
+    17.5,
+      20,
+    22.5,
+      25 
+],
+[
+        0,
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5,
+      15,
+    17.5,
+      20,
+    22.5,
+      25 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     2500,
+    3500,
+    4500,
+    5500,
+    6500 
+],
+"xlab": [
+ "2500",
+"3500",
+"4500",
+"5500",
+"6500" 
+],
+"xrange": [ 2482.759,  6579.31 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25 
+],
+"ylab": [
+ "0",
+"5",
+"10",
+"15",
+"20",
+"25" 
+],
+"yrange": [    -1.25,    26.25 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+      180,
+     200,
+     220 
+],
+"xlab": [
+ "180",
+"200",
+"220" 
+],
+"xrange": [ 168.8621,      236 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25 
+],
+"ylab": [
+ "0",
+"5",
+"10",
+"15",
+"20",
+"25" 
+],
+"yrange": [    -1.25,    26.25 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Value",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Count",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "2500",
+"3500",
+"4500",
+"5500",
+"6500",
+"180",
+"200",
+"220" 
+],
+"ylabs": [
+ "0",
+"5",
+"10",
+"15",
+"20",
+"25" 
+],
+"title_size": "16.8pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom3_bar_hist" 
+] 
+} 
+},
+"title": {
+ "x": [        1 ],
+"y": [        1 ] 
+} 
+}
