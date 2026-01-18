@@ -131,5 +131,5 @@ viz <- animint(
 animint2pages(
   viz,
   out.dir = "penguins_animint",
-  github_repo = "animated-interactive-ggplots"
+  github_repo = "animint2-pages-easy-Test"
 )

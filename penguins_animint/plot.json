@@ -277,7 +277,7 @@
 "entries": [
  {
  "pointcolour": "#F8766D",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":        2,
 "pointalpha":      0.7,
 "pointstroke":      0.5,
@@ -285,7 +285,7 @@
 },
 {
  "pointcolour": "#00BA38",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":        2,
 "pointalpha":      0.7,
 "pointstroke":      0.5,
@@ -293,7 +293,7 @@
 },
 {
  "pointcolour": "#619CFF",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":        2,
 "pointalpha":      0.7,
 "pointstroke":      0.5,
