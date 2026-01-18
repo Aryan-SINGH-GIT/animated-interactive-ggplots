@@ -12,9 +12,16 @@ This repository contains solutions to R programming tasks organized by difficult
 
 ---
 
-### 2. Medium Test Solutions
+### 2. Medium Test Solution
 - **k-Nearest Neighbour (kNN) classification:** https://aryan-singh-git.github.io/knn-animint/
 - **Source Code:** `https://github.com/Aryan-SINGH-GIT/animated-interactive-ggplots/blob/master/02_animint2_interactions/knn_animint.R`
+
+---
+
+
+### 2. Medium-Hard Test Solution
+- **Gallery:** https://aryan-singh-git.github.io/animint-gallery/
+- **Source Code:** `https://github.com/Aryan-SINGH-GIT/animint-gallery/blob/gh-pages/index.Rmd`
 
 ---
 
