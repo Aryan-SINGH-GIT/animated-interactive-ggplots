@@ -26,5 +26,5 @@ This repository contains solutions to R programming tasks organized by difficult
 ---
 
 ### 4. Hard Test Solution
-- **Video Demo:** `https://vimeo.com/1160751047/35b9d8d2be?share=copy&fl=sv&fe=ci`
+- **Video Demo:** https://vimeo.com/1160751047/35b9d8d2be?share=copy&fl=sv&fe=ci
 - **Pull Request:** `https://github.com/animint/animint2/pull/296`
