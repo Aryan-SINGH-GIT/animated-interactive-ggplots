@@ -7,24 +7,24 @@ This repository contains solutions to R programming tasks organized by difficult
 
 ### 1. Easy Test Solution
 - **Penguins Dataset Visualization:** https://Aryan-SINGH-GIT.github.io/animint2-pages-easy-Test
-- **Source Code:** `(https://github.com/Aryan-SINGH-GIT/animated-interactive-ggplots/blob/master/01_animint2_pages/basic_animint.R)`
+- **Source Code:** https://github.com/Aryan-SINGH-GIT/animated-interactive-ggplots/blob/master/01_animint2_pages/basic_animint.R
 - **Note:** Function masking issues observed when `animint2` is loaded alongside `ggplot2`.
 
 ---
 
 ### 2. Medium Test Solution
 - **k-Nearest Neighbour (kNN) classification:** https://aryan-singh-git.github.io/knn-animint/
-- **Source Code:** `https://github.com/Aryan-SINGH-GIT/animated-interactive-ggplots/blob/master/02_animint2_interactions/knn_animint.R`
+- **Source Code:** https://github.com/Aryan-SINGH-GIT/animated-interactive-ggplots/blob/master/02_animint2_interactions/knn_animint.R
 
 ---
 
 
 ### 2. Medium-Hard Test Solution
 - **Gallery:** https://aryan-singh-git.github.io/animint-gallery/
-- **Source Code:** `https://github.com/Aryan-SINGH-GIT/animint-gallery/blob/gh-pages/index.Rmd`
+- **Source Code:** https://github.com/Aryan-SINGH-GIT/animint-gallery/blob/gh-pages/index.Rmd
 
 ---
 
 ### 4. Hard Test Solution
 - **Video Demo:** https://vimeo.com/1160751047/35b9d8d2be?share=copy&fl=sv&fe=ci
-- **Pull Request:** `https://github.com/animint/animint2/pull/296`
+- **Pull Request:** https://github.com/animint/animint2/pull/296
