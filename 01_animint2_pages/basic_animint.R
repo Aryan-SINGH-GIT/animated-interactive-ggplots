@@ -70,18 +70,16 @@ hist_combined <- ggplot(
   ) +
   theme_bw(base_size = 12) + 
   theme(
-    # 1. Make 'body_mass_g' and 'flipper_length_mm' headers larger
+ 
     strip.text = element_text(face = "bold", size = 15, color = "black"),
     
-    # 2. Make 'Species' section title larger
+
     legend.title = element_text(face = "bold", size = 15),
     legend.text = element_text(size = 12),
-    
-    # 3. Maintain readability for x-axis numbers
+
     axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
     axis.title = element_text(face = "bold"),
-    
-    # 4. Use panel.margin to avoid the error and add space
+
     panel.margin = unit(1.5, "lines")
   )
 # 4. Combine into animint
