@@ -70,16 +70,11 @@ hist_combined <- ggplot(
   ) +
   theme_bw(base_size = 12) + 
   theme(
- 
     strip.text = element_text(face = "bold", size = 15, color = "black"),
-    
-
     legend.title = element_text(face = "bold", size = 15),
     legend.text = element_text(size = 12),
-
     axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
     axis.title = element_text(face = "bold"),
-
     panel.margin = unit(1.5, "lines")
   )
 # 4. Combine into animint
