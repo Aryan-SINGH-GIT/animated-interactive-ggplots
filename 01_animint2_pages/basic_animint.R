@@ -1,50 +1,9 @@
-library(ggplot2)
 library(animint2)
 library(palmerpenguins)
 library(tidyr)
 data(penguins)
 
-# Dummy data for text panels
-text_df <- data.frame(x = 1, y = 1)
-
-# Title panel
-title_plot <- ggplot(text_df, aes(x, y)) +
-  geom_text(
-    label = paste(
-      "Penguins: Flipper Length vs Body Mass",
-      "",
-      "Each point represents one penguin",
-      "Histograms show variable distributions",
-      sep = "\n"
-    ),
-    size = 5,
-    lineheight = 1.2
-  ) +
-  xlim(0.5, 1.5) +
-  ylim(0.5, 1.5) +
-  theme_minimal() +
-  theme(
-    axis.text  = element_blank(),
-    axis.title = element_blank(),
-    panel.grid = element_blank()
-  )
-
-# Source panel (required)
-source_plot <- ggplot(text_df, aes(x, y)) +
-  geom_text(
-    label = "Source: palmerpenguins",
-    size = 6
-  ) +
-  xlim(0.5, 1.5) +
-  ylim(0.5, 1.5) +
-  theme_minimal() +
-  theme(
-    axis.text  = element_blank(),
-    axis.title = element_blank(),
-    panel.grid = element_blank()
-  )
-
-# Scatter plot with visible axis numbers
+# 1. Scatter plot 
 scatter_plot <- ggplot(
   penguins,
   aes(
@@ -53,9 +12,9 @@ scatter_plot <- ggplot(
     color = species
   )
 ) +
-  geom_point(size = 2, alpha = 0.7) +
+  geom_point(size = 2, alpha = 0.7) + 
   scale_x_continuous(
-    limits = c(170, 230),
+    limits = c(170, 235),
     breaks = seq(170, 230, by = 10)
   ) +
   scale_y_continuous(
@@ -67,23 +26,22 @@ scatter_plot <- ggplot(
     y = "Body mass (g)",
     color = "Species"
   ) +
-  theme_classic(base_size = 14) +
+  theme_bw(base_size = 14) + 
   theme(
-    axis.text = element_text(color = "black", size = 12),
-    axis.title = element_text(face = "bold", size = 14),
-    axis.ticks = element_line(color = "black"),
-    axis.line = element_line(color = "black")
+    axis.title = element_text(face = "bold"),
+    legend.title = element_text(face = "bold")
   )
 
-# Prepare data for histograms
+# 2. Prepare data for histograms
 penguins_long <- penguins |>
+  drop_na(flipper_length_mm, body_mass_g) |>
   pivot_longer(
     cols = c(flipper_length_mm, body_mass_g),
     names_to = "variable",
     values_to = "value"
   )
 
-# Combined histogram with visible axis numbers
+# Combined histogram 
 hist_combined <- ggplot(
   penguins_long,
   aes(
@@ -92,7 +50,7 @@ hist_combined <- ggplot(
   )
 ) +
   geom_histogram(
-    bins = 30,
+    bins = 25,
     alpha = 0.6,
     color = "white",
     position = "identity"
@@ -106,28 +64,35 @@ hist_combined <- ggplot(
     ))
   ) +
   labs(
-    x = "Value",
+    x = "Measurement Value",
     y = "Count",
     fill = "Species"
   ) +
-  theme_classic(base_size = 14) +
+  theme_bw(base_size = 12) + 
   theme(
-    axis.text = element_text(color = "black", size = 12),
-    axis.title = element_text(face = "bold", size = 14),
-    strip.text = element_text(face = "bold", size = 12),
-    axis.ticks = element_line(color = "black"),
-    axis.line = element_line(color = "black")
+    # 1. Make 'body_mass_g' and 'flipper_length_mm' headers larger
+    strip.text = element_text(face = "bold", size = 15, color = "black"),
+    
+    # 2. Make 'Species' section title larger
+    legend.title = element_text(face = "bold", size = 15),
+    legend.text = element_text(size = 12),
+    
+    # 3. Maintain readability for x-axis numbers
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+    axis.title = element_text(face = "bold"),
+    
+    # 4. Use panel.margin to avoid the error and add space
+    panel.margin = unit(1.5, "lines")
   )
-
-# Combine into animint
+# 4. Combine into animint
 viz <- animint(
-  title   = title_plot,
-  source  = source_plot,
+  title   = "Penguin Sizes by Species",
   scatter = scatter_plot,
-  hist    = hist_combined
+  hist    = hist_combined,
+  source  = "https://github.com/Aryan-SINGH-GIT/animint2-pages-easy-Test"
 )
 
-# Export to GitHub Pages
+# Export
 animint2pages(
   viz,
   out.dir = "penguins_animint",
