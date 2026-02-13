@@ -70,6 +70,7 @@ hist_combined <- ggplot(
   ) +
   theme_bw(base_size = 12) + 
   theme(
+  
     strip.text = element_text(face = "bold", size = 15, color = "black"),
     legend.title = element_text(face = "bold", size = 15),
     legend.text = element_text(size = 12),
@@ -82,7 +83,7 @@ viz <- animint(
   title   = "Penguin Sizes by Species",
   scatter = scatter_plot,
   hist    = hist_combined,
-  source  = "https://github.com/Aryan-SINGH-GIT/animint2-pages-easy-Test"
+  source  = "https://github.com/Aryan-SINGH-GIT/animated-interactive-ggplots"
 )
 
 # Export
